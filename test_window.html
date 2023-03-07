@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo-white.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>AddUde | Тестирование</title>
 
 </head>
@@ -36,15 +37,158 @@
             </div>
         </nav>
     </header>
-    <div class="container container-questions w-75 mt-5">
-        <div class="question"></div>
+    <div class="container w-75 mt-5">
+        <form>
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">Какой из этих предметов ты находишь самым интересным?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="obj" value="1">
+                            Математика
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="obj" value="2">
+                            Русский язык
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="obj" value="3">
+                            История
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="obj" value="4">
+                            Инностранный язык
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">Какую из этих деятельностей ты предпочитаешь?</h1>
+
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="work" value="1">
+                            Разбираться в механизмах
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="work" value="2">
+                            Рисовать или лепить
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="work" value="3">
+                            Читать книги
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="work" value="4">
+                            Общаться с людьми
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">Какие из этих игр тебе нравятся больше всего?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="games" value="1">
+                            Решение головоломок
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="games" value="2">
+                            Конструирование
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="games" value="3">
+                            Ролевые игры
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="games" value="4">
+                            Компьютерные игры
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">Какое из этих занятий ты бы хотел попробовать?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="attempt" value="1">
+                            Создание роботов
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="attempt" value="2">
+                            Занятия лёгкой атлетикой
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="attempt" value="3">
+                            Хореография
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="attempt" value="4">
+                            Изучение инструментов
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </form>
+        <div class="d-flex justify-content-center mb-5 flex-column">
+            <a href="test_res.html" class="res-link btn btn-success btn-lg">Узнать результат</a>
+        </div>
     </div>
 
-    <!-- <footer class="bg-dark h-75">
-        <div class="container">
-            <p class="text-white">Подвал с увеличенным логотипом, меню, указанием разработчика</p>
-        </div>
-    </footer> -->
     <script src="js/test.js"></script>
 
 
