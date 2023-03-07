@@ -6,9 +6,6 @@ let textQuestion = document.querySelector(".question");
 // let totalH1 = document.querySelector(".total-text");
 // let totalP = document.querySelector(".total-content");
 
-let prevBtn = document.querySelector(".prev");
-let nextBtn = document.querySelector(".next");
-
 let i = 0;
 
 let programm = 0,
@@ -230,15 +227,3 @@ container.addEventListener("click", (e) => {
 //   console.log(typeArr);
 //   console.log(programm);
 // });
-
-nextBtn.addEventListener("click", (e) => {
-  i += 1;
-  renderText(i);
-  renderQuestions(i)
-});
-
-prevBtn.addEventListener("click", (e) => {
-    i -= 1;
-    renderText(i);
-});
-  
