@@ -1,4 +1,8 @@
 
+.img-slider img{
+    object-fit: fill;
+}
+
 .mobile-star{
     display: none;
 }
