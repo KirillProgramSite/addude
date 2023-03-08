@@ -19,6 +19,16 @@ a .logo{
     width: 50px;
 }
 
+@media(max-width: 1024px) {
+    .mobile-slider{
+        display: block;
+    }
+
+    .desktop-slider{
+        display: none;
+    }
+}
+
 
 @media(max-width: 480px) {
 
