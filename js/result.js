@@ -1,5 +1,10 @@
-let resCon = document.querySelector(".res");
-let nrl = localStorage.getItem("reslet");
+let resCon = document.querySelector('.res')
+let tech = localStorage.getItem("techBall");
+let guman = localStorage.getItem("gumanBall");
+let bis = localStorage.getItem("bisBall");
+
+let textRes = document.querySelector('.textRes')
+let textResMobile = document.querySelector('.textResMobile')
 
 let resArr = [
   {
@@ -75,19 +80,69 @@ let resArr = [
   },
 ];
 
-let newResArr = "";
+let totalArr = [
+  {
+    name: "Техническая",
+    type: 'tech',
+    score: tech
+  },
 
-if (nrl == "tech" || nrl == "guman" || nrl == "bis") {
-  newResArr = resArr.filter(function (res) {
-    return res.type === nrl;
-  });
-} else if(nrl == 'other') {
-  newResArr = resArr
+  {
+    name: "Гуманитарная",
+    type: 'guman',
+    score: guman
+  },
+
+  {
+    name: "Бизнес",
+    type: 'bis',
+    score: bis
+  },
+];
+
+function compare(a, b) {
+  if (a > b) return 1; // если первое значение больше второго
+  if (a == b) return 0; // если равны
+  if (a < b) return -1; // если первое значение меньше второго
 }
+ 
+totalArr.sort((a, b) => b.score - a.score )
+totalArr.sort(compare)
 
-newResArr.map((res) => {
+
+
+let h1 = document.createElement('h1')
+h1.textContent = `Вам больше подходит ${totalArr[0].name} направленость`
+
+textRes.appendChild(h1)
+// textResMobile.appendChild(h1)
+
+let h1mob = document.createElement('h1')
+h1mob.textContent = `Вам больше подходит ${totalArr[0].name} направленость`
+
+textResMobile.appendChild(h1mob)
+
+let newArrRes = resArr.filter(function(res) {
+  return res.type == totalArr[0].type
+})
+
+
+console.log(newArrRes);
+
+
+
+
+// if (nrl == "tech" || nrl == "guman" || nrl == "bis") {
+//   newResArr = resArr.filter(function (res) {
+//     return res.type === nrl;
+//   });
+// } else if (nrl == "other") {
+//   newResArr = resArr;
+// }
+
+newArrRes.map((res) => {
   let card = document.createElement("div");
-  card.classList.add("card", "mb-3");
+  card.classList.add("card", "mb-3", 'm-2');
   card.style.maxWidth = "540px";
 
   card.innerHTML = `

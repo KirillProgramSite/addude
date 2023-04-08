@@ -41,6 +41,13 @@
         </nav>
     </header>
     <div class="container w-75 mt-5">
+        <nav aria-label="breadcrumb" class="pb-2 pt-5">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="test.html">Выбор направления</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Тестирование</li>
+            </ol>
+          </nav>
         <form>
             <div class="mb-5 d-flex flex-column">
                 <h1 class="mb-4">1. Какой вид деятельности из представленных вас больше всего интересует?</h1>
@@ -468,8 +475,29 @@
         </div>
     </div>
 
-    <script src="js/test.js"></script>
 
+    <footer class="bg-success">
+        <div class="container py-5">
+            <div class="d-flex justify-content-between pb-5">
+                <div class="footer-logo">
+                    <img class="w-50" src="img/logo-white.png" alt="">
+                </div>
+                <div class="footer-content">
+                    <ul class="navbar-nav" style="list-style: none;">
+                        <li><a class="nav-link active text-white" href="#">Главная</a></li>
+                        <li><a class="nav-link text-white" href="test.html">Выбор направления</a></li>
+                        <li><a class="nav-link text-white" href="org.html">Организации ДО</a></li>
+                        <li><a class="nav-link text-white" href="contact.html">Связаться с нами</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p class="text-white fw-bold">©AddEdu 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/test.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
