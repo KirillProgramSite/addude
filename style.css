@@ -8,6 +8,11 @@
 
 }
 
+.carousel-control{
+    background: none;
+    background-image: none !important;
+}
+
 .hero-mobile{
     width: 100%;    
     background: 
