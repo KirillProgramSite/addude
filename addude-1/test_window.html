@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo-white.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>AddUde | Тестирование</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-success" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo-white.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="test.html">Выбор направления</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="org.html">Организации ДО</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Связаться с нами</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container w-75 mt-5">
+        <nav aria-label="breadcrumb" class="pb-2 pt-5">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page"><a href="test.html">Выбор направления</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Тестирование</li>
+            </ol>
+          </nav>
+        <form>
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">1. Какой вид деятельности из представленных вас больше всего интересует?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test1" value="1">
+                            Решение математических задач 
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test1" value="2">
+                            Чтение книг 
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test1" value="3">
+                            Ведение переговоров или управление 
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">2. Какой навык из представленных вы бы хотели развить в первую очередь?</h1>
+
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test2" value="1">
+                            Аналитическое и логическое мышление 
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test2" value="2">
+                            Общение и творчество 
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test2" value="3">
+                            Стратегическое планирование и грамотное принятие решений 
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">3. С какими инструментами или программами вам нравится работать?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test3" value="1">
+                            Языки программирования и средства разработки программного обеспечения
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test3" value="2">
+                            Письменные или художественные инструменты 
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test3" value="3">
+                            Инструменты финансового управления или планирования проектов 
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">4. Какую работу вы бы предпочли?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test4" value="1">
+                            Работа с техникой и машинами 
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test4" value="2">
+                            Работа с людьми и идеями 
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test4" value="3">
+                            Работа с данными и числами 
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">5. Какое хобби или занятие из представленного вам нравится больше всего?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test5" value="1">
+                            Компьютерные игры или программирование 
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test5" value="2">
+                            Чтение или творчество 
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test5" value="3">
+                            Нетворкинг (расширение круга друзей и знакомых) 
+                        </div>
+                    </div>
+                </label>
+            </div>
+            
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">6. Какие проблемы вам нравится решать?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test6" value="1">
+                            Технические проблемы, связанные с машинами и системами  
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test6" value="2">
+                            Социальные или психологические проблемы 
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test6" value="3">
+                            Деловые проблемы, связанные с финансами или маркетингом 
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">7. Какая отрасль или область вас больше всего интересует?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test7" value="1">
+                            Технологии или техника   
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test7" value="2">
+                            Искусство или гуманитарные науки  
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test7" value="3">
+                            Бизнес или финансы  
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">8. Какое влияние вы хотите произвести своей работой?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test8" value="1">
+                            Создание инновационных технологий    
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test8" value="2">
+                            Вдохновлять и развлекать других  
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test8" value="3">
+                            Оказание положительного влияния на общество или экономику   
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">9. Какой из этих уроков ты находишь самым интересным?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test9" value="1">
+                            Математика     
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test9" value="2">
+                            Русский язык и литература  
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test9" value="3">
+                            Иностранный язык    
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">10. Какие книги или средства массовой информации вам нравятся больше всего?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test10" value="1">
+                            Научная фантастика или книги, связанные с технологиями     
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test10" value="2">
+                            СМИ, связанные с литературой или искусством   
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test10" value="3">
+                            Книги по бизнесу или самосовершенствованию     
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">11. Над какими задачами или проектами вам больше всего хотелось бы работать?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test11" value="1">
+                            Разработка программного обеспечения или создание машин      
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test11" value="2">
+                            Создание искусства или письма    
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test11" value="3">
+                            Управление проектами или руководство командами      
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">12. Какие проблемы вам хотелось бы решать больше всего?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test12" value="1">
+                            Технические проблемы, связанные со сложными системами       
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test12" value="2">
+                            Творческие задачи, связанные с воображением и выражением     
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test12" value="3">
+                            Стратегические задачи, связанные с планированием и принятием решений       
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">13. В каких компаниях или организациях вы хотели бы работать?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test13" value="1">
+                            Технологические компании или исследовательские институты        
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test13" value="2">
+                            Художественные или культурные организации      
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test13" value="3">
+                            Финансовые или консалтинговые фирмы        
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">14. Какие навыки или знания вы хотите развить больше всего?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test14" value="1">
+                            Программирование или технические навыки         
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test14" value="2">
+                            Творческие или художественные способности       
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test14" value="3">
+                            Деловые или лидерские качества         
+                        </div>
+                    </div>
+                </label>
+            </div>
+
+            <div class="mb-5 d-flex flex-column">
+                <h1 class="mb-4">15. Кем вы бы хотели видеть себя в будущем больше всего из представленных профессий?</h1>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test15" value="1">
+                            Инженер-программист или специалист по данным         
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test15" value="2">
+                            Художник или писатель        
+                        </div>
+                    </div>
+                </label>
+                <label class="mb-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <input type="radio" name="test15" value="3">
+                            Менеджер или предприниматель          
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </form>
+        <div class="d-flex justify-content-center mb-5 flex-column">
+            <a href="test_res.html" class="res-link btn btn-success btn-lg">Узнать результат</a>
+        </div>
+    </div>
+
+
+    <footer class="bg-success">
+        <div class="container py-5">
+            <div class="d-flex justify-content-between pb-5">
+                <div class="footer-logo">
+                    <img class="w-50" src="img/logo-white.png" alt="">
+                </div>
+                <div class="footer-content">
+                    <ul class="navbar-nav" style="list-style: none;">
+                        <li><a class="nav-link active text-white" href="#">Главная</a></li>
+                        <li><a class="nav-link text-white" href="test.html">Выбор направления</a></li>
+                        <li><a class="nav-link text-white" href="org.html">Организации ДО</a></li>
+                        <li><a class="nav-link text-white" href="contact.html">Связаться с нами</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <p class="text-white fw-bold">©AddEdu 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/test.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+</body>
+
+</html>
