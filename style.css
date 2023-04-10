@@ -79,6 +79,34 @@
 } 
 
 
+@media(max-width: 696px){
+    .swiper-wrapper {
+        min-width: 480px;
+        margin: 0;
+    }
+
+    .swipper-buttons{
+        display: none;
+    }
+    
+
+    .table-img{
+        display: none;
+    }
+    .mobile-img{
+        display: block;
+    }
+
+    .mobile{
+        display: block;
+    }
+    
+    .desktop{
+        display: none;
+    }
+}
+
+
 
 
 
