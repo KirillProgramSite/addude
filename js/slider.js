@@ -1,17 +1,7 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   loop: true,
-  slidesPerView: 2,
-  breakpoints: {
-    // when window width is >= 480px
-    480: {
-        slidesPerView: 1,
-    },
-    // when window width is >= 640px
-    640: {
-        slidesPerView: 2,
-    },
-  },
+  slidesPerView: 1,
   // spaceBetween: 10,
 
   // If we need pagination
