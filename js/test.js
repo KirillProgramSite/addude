@@ -6,14 +6,11 @@ let tech = 0,
 
 function result() {
   let arrayBalls = [];
-  
+
   const inputs = document.querySelectorAll('input[type="radio"]:checked');
 
   inputs.forEach((input) => {
     arrayBalls.push(input.value);
-    input.addEventListener('click', () => {
-     console.log('я инпут');
-    })
   });
 
   arrayBalls.forEach((value) => {
@@ -24,13 +21,11 @@ function result() {
     } else if (value === "3") {
       bis += 1;
     }
-
   });
 
-  localStorage.setItem('techBall', tech)
-  localStorage.setItem('gumanBall', guman)
-  localStorage.setItem('bisBall', bis)
+  localStorage.setItem("techBall", tech);
+  localStorage.setItem("gumanBall", guman);
+  localStorage.setItem("bisBall", bis);
 }
-
 
 linkRes.addEventListener("click", result);

@@ -100,14 +100,7 @@ let totalArr = [
   },
 ];
 
-function compare(a, b) {
-  if (a > b) return 1; // если первое значение больше второго
-  if (a == b) return 0; // если равны
-  if (a < b) return -1; // если первое значение меньше второго
-}
- 
 totalArr.sort((a, b) => b.score - a.score )
-totalArr.sort(compare)
 
 
 
@@ -115,7 +108,7 @@ let h1 = document.createElement('h1')
 h1.textContent = `Вам больше подходит ${totalArr[0].name} направленость`
 
 textRes.appendChild(h1)
-// textResMobile.appendChild(h1)
+
 
 let h1mob = document.createElement('h1')
 h1mob.textContent = `Вам больше подходит ${totalArr[0].name} направленость`
@@ -130,15 +123,6 @@ let newArrRes = resArr.filter(function(res) {
 console.log(newArrRes);
 
 
-
-
-// if (nrl == "tech" || nrl == "guman" || nrl == "bis") {
-//   newResArr = resArr.filter(function (res) {
-//     return res.type === nrl;
-//   });
-// } else if (nrl == "other") {
-//   newResArr = resArr;
-// }
 
 newArrRes.map((res) => {
   let card = document.createElement("div");

@@ -27,6 +27,13 @@
 
 .desktop{
     display: block;
+    
+}
+
+.footer-des{
+    width: 100%;
+    position: relative;
+    bottom: 0;
 }
 
 .table-img{
@@ -35,6 +42,10 @@
 
 .mobile-img{
     display: none;
+}
+
+.mobile-img{
+    width: 200px;
 }
 
 .swiper-wrapper {
@@ -81,7 +92,7 @@
 
 @media(max-width: 696px){
     .swiper-wrapper {
-        min-width: 480px;
+        min-width: 700px;
         margin: 0;
     }
 
